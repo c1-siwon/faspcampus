@@ -1,0 +1,62 @@
+/* ===========================================
+   Spacing
+   =========================================== */
+:root {
+  --spacing-0: 0px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+}
+
+/* ===========================================
+   Radius
+   =========================================== */
+:root {
+  --radius-0: 0px;
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --radius-32: 32px;
+  --radius-full: 9999px;
+}
+
+/* ===========================================
+   Typography: Font Family
+   =========================================== */
+:root {
+  --font-family-pretendard: 'Pretendard Variable', 'Pretendard', sans-serif;
+  --font-line-height-base: 1.5;
+}
+
+/* ===========================================
+   Typography: Font Size
+   =========================================== */
+:root {
+  --font-size-display-lg: 32px;
+  --font-size-display-sm: 24px;
+  --font-size-title-lg: 20px;
+  --font-size-title-sm: 18px;
+  --font-size-body-lg: 16px;
+  --font-size-body-sm: 14px;
+  --font-size-caption-lg: 13px;
+  --font-size-caption-sm: 12px;
+}
+
+/* ===========================================
+   Typography: Font Weight
+   =========================================== */
+:root {
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
