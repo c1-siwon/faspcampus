@@ -5,3 +5,5 @@ storybook-static/
 .env
 .vercel
 build-storybook.log
+tsconfig.app.tsbuildinfo
+chromatic-report.xml
