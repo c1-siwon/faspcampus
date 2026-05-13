@@ -7,7 +7,7 @@ describe('Logingoogle', () => {
   it('버튼 텍스트를 렌더링한다', () => {
     render(<Logingoogle />)
     expect(
-      screen.getByRole('button', { name: /구글로 계속하기/ })
+      screen.getByRole('button', { name: /구글로 로그인 하기/ })
     ).toBeInTheDocument()
   })
 

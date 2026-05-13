@@ -52,7 +52,7 @@ export function Category({
       <span
         style={{
           fontFamily: 'var(--font-family-pretendard)',
-          fontSize: 'var(--font-size-display-lg)',
+          fontSize: 'var(--font-size-display-sm)',
           fontWeight: isSelected
             ? 'var(--font-weight-bold)'
             : 'var(--font-weight-regular)',

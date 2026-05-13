@@ -49,19 +49,30 @@ export function SortTab({
       className={className}
       style={{
         display: 'flex',
-        alignItems: 'flex-end',
-        borderBottom: '1px solid var(--color-border-default)',
-        backgroundColor: 'var(--color-bg-default)',
+        alignItems: 'center',
+        gap: 'var(--spacing-12)',
         ...style,
       }}
     >
-      {options.map((option) => (
-        <SortTabItem
-          key={option.value}
-          label={option.label}
-          isSelected={selectedValue === option.value}
-          onClick={() => handleSelect(option.value)}
-        />
+      {options.map((option, index) => (
+        <React.Fragment key={option.value}>
+          {index > 0 && (
+            <div
+              aria-hidden
+              style={{
+                width: 1,
+                height: 12,
+                backgroundColor: 'var(--color-border-default)',
+                flexShrink: 0,
+              }}
+            />
+          )}
+          <SortTabItem
+            label={option.label}
+            isSelected={selectedValue === option.value}
+            onClick={() => handleSelect(option.value)}
+          />
+        </React.Fragment>
       ))}
     </div>
   )

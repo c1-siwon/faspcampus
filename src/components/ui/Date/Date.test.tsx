@@ -23,7 +23,7 @@ describe('DateLabel', () => {
 
   it('절대 날짜 형식으로 표시한다', () => {
     render(<DateLabel date={DAY_AGO} format="absolute" />)
-    expect(screen.getByRole('time').textContent).toMatch(/\d{4}/)
+    expect(screen.getByRole('time').textContent).toMatch(/\d{2}\.\d{2}\.\d{2}/)
   })
 
   it('dateTime 속성에 ISO 문자열을 설정한다', () => {

@@ -1,11 +1,9 @@
+import { Icon } from '../Icon/Icon'
+
 export interface SortTabItemProps {
-  /** 탭 레이블 */
   label: string
-  /** 선택 여부 */
   isSelected?: boolean
-  /** 클릭 핸들러 */
   onClick?: () => void
-  /** 추가 클래스 */
   className?: string
 }
 
@@ -24,15 +22,9 @@ export function SortTabItem({
       style={{
         display: 'inline-flex',
         alignItems: 'center',
-        justifyContent: 'center',
-        paddingLeft: 'var(--spacing-12)',
-        paddingRight: 'var(--spacing-12)',
-        paddingTop: 'var(--spacing-8)',
-        paddingBottom: 'var(--spacing-8)',
+        gap: isSelected ? 'var(--spacing-4)' : undefined,
+        padding: 0,
         border: 'none',
-        borderBottom: isSelected
-          ? '2px solid var(--color-border-brand)'
-          : '2px solid transparent',
         background: 'transparent',
         cursor: 'pointer',
         fontFamily: 'var(--font-family-pretendard)',
@@ -41,13 +33,13 @@ export function SortTabItem({
           ? 'var(--font-weight-bold)'
           : 'var(--font-weight-regular)',
         color: isSelected
-          ? 'var(--color-interactive-primary)'
+          ? 'var(--color-text-primary)'
           : 'var(--color-text-secondary)',
         lineHeight: 'var(--font-line-height-base)',
         whiteSpace: 'nowrap',
-        transition: 'color 0.15s, border-color 0.15s',
       }}
     >
+      {isSelected && <Icon name="check" size={16} />}
       {label}
     </button>
   )

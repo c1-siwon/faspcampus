@@ -55,6 +55,15 @@ export const Disabled: Story = {
   args: { disabled: true, value: '수정할 수 없는 내용입니다.' },
 }
 
+export const WithImage: Story = {
+  args: {
+    imageUrl: '/images/content-showcase.png',
+    value:
+      '안녕하세요, 피그마피디아 운영팀입니다. 커뮤니티가 점점 성장하면서 새롭게 정책을 정비하게 되었습니다.',
+    disabled: true,
+  },
+}
+
 export const WithCodeExample: Story = {
   render: (args) => (
     <div

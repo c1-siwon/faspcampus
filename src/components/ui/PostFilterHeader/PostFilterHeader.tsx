@@ -96,11 +96,7 @@ export function PostFilterHeader({
           value={searchValue}
           onChange={onSearchChange}
           onSearch={onSearch}
-          style={{
-            width: 240,
-            height: '36px',
-            borderRadius: 'var(--radius-full)',
-          }}
+          style={{ width: 240 }}
         />
       </div>
     </div>

@@ -51,20 +51,22 @@ export function Searchbar({
         display: 'flex',
         alignItems: 'center',
         gap: 'var(--spacing-8)',
-        paddingLeft: 'var(--spacing-12)',
-        paddingRight: 'var(--spacing-12)',
-        /* ⚠️ 높이 44px — --spacing-44 토큰 없음, 검색바 고정값 유지 */
-        height: '44px',
-        borderRadius: 'var(--radius-8)',
+        paddingLeft: 'var(--spacing-16)',
+        paddingRight: 'var(--spacing-16)',
+        paddingTop: 'var(--spacing-8)',
+        paddingBottom: 'var(--spacing-8)',
+        height: '36px',
+        borderRadius: 'var(--radius-full)',
         border: '1px solid var(--color-border-default)',
         backgroundColor: 'var(--color-bg-default)',
+        boxSizing: 'border-box',
         ...style,
       }}
     >
       {/* 검색 아이콘 */}
       <Icon
         name="search"
-        size={20}
+        size={16}
         color="var(--color-text-tertiary)"
         label="검색"
       />

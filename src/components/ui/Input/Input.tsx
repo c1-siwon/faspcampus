@@ -62,7 +62,7 @@ export function Input({
           style={{
             fontFamily: 'var(--font-family-pretendard)',
             fontSize: 'var(--font-size-body-sm)',
-            fontWeight: 'var(--font-weight-medium)',
+            fontWeight: 'var(--font-weight-bold)',
             color: disabled
               ? 'var(--color-text-disabled)'
               : 'var(--color-text-primary)',
@@ -133,7 +133,7 @@ export function Input({
             outline: 'none',
             backgroundColor: 'transparent',
             fontFamily: 'var(--font-family-pretendard)',
-            fontSize: 'var(--font-size-body-sm)',
+            fontSize: 'var(--font-size-body-lg)',
             fontWeight: 'var(--font-weight-regular)',
             color: disabled
               ? 'var(--color-text-disabled)'

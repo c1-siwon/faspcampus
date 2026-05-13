@@ -24,20 +24,40 @@ export function Divider({
   const thickness = weight === 'thin' ? '1px' : '2px'
 
   return (
-    <hr
+    <div
       role="separator"
       aria-orientation={orientation}
       className={className}
       style={{
-        border: 'none',
-        margin: 0,
+        display: 'flex',
         flexShrink: 0,
-        backgroundColor: 'var(--color-border-default)',
         ...(isHorizontal
-          ? { width: '100%', height: thickness }
-          : { width: thickness, height: '100%', alignSelf: 'stretch' }),
+          ? {
+              width: '100%',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              paddingTop: 'var(--spacing-12)',
+              paddingBottom: 'var(--spacing-12)',
+            }
+          : {
+              height: '100%',
+              flexDirection: 'row',
+              alignItems: 'center',
+              paddingLeft: 'var(--spacing-12)',
+              paddingRight: 'var(--spacing-12)',
+            }),
         ...style,
       }}
-    />
+    >
+      <div
+        style={{
+          backgroundColor: 'var(--color-bg-muted)',
+          flexShrink: 0,
+          ...(isHorizontal
+            ? { width: '100%', height: thickness }
+            : { height: '100%', width: thickness }),
+        }}
+      />
+    </div>
   )
 }

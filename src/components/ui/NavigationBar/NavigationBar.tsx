@@ -27,6 +27,9 @@ export function NavigationBar({
       role="banner"
       className={className}
       style={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 50,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',

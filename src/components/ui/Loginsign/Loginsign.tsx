@@ -24,8 +24,8 @@ export function Loginsign({ onSignUp, className = '', style }: LoginsignProps) {
       <span
         style={{
           fontFamily: 'var(--font-family-pretendard)',
-          fontSize: 'var(--font-size-caption-sm)',
-          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-caption-lg)',
+          fontWeight: 'var(--font-weight-medium)',
           color: 'var(--color-text-tertiary)',
           lineHeight: 'var(--font-line-height-base)',
           textAlign: 'center',

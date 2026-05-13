@@ -49,7 +49,7 @@ export const Default: Story = {
 
 export const WithThumbnail: Story = {
   args: {
-    thumbnail: '/images/showcase/imagesmall-01.svg',
+    thumbnail: '/images/showcase/imagesmall-01.png',
   },
 }
 

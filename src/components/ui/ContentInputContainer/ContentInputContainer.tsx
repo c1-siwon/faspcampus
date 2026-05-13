@@ -9,6 +9,7 @@ export interface ContentInputContainerProps {
   label?: string
   error?: string
   disabled?: boolean
+  imageUrl?: string
   className?: string
   style?: React.CSSProperties
 }
@@ -22,6 +23,7 @@ export function ContentInputContainer({
   label,
   error,
   disabled = false,
+  imageUrl,
   className = '',
   style,
 }: ContentInputContainerProps) {
@@ -64,6 +66,28 @@ export function ContentInputContainer({
           transition: 'border-color 0.15s',
         }}
       >
+        {imageUrl && (
+          <div
+            style={{
+              padding: 'var(--spacing-16)',
+              paddingBottom: 0,
+            }}
+          >
+            <img
+              src={imageUrl}
+              alt=""
+              style={{
+                display: 'block',
+                width: '100%',
+                maxWidth: 500,
+                height: 'auto',
+                borderRadius: 'var(--radius-8)',
+                border: '1px solid var(--color-border-default)',
+                objectFit: 'cover',
+              }}
+            />
+          </div>
+        )}
         <textarea
           id={id}
           value={value}
@@ -75,16 +99,18 @@ export function ContentInputContainer({
           style={{
             display: 'block',
             width: '100%',
-            padding: 'var(--spacing-16)',
+            paddingLeft: 'var(--spacing-24)',
+            paddingRight: 'var(--spacing-24)',
+            paddingTop: 'var(--spacing-32)',
             paddingBottom: maxLength
               ? 'var(--spacing-32)'
-              : 'var(--spacing-16)',
+              : 'var(--spacing-32)',
             background: 'transparent',
             border: 'none',
             outline: 'none',
             resize: 'vertical',
             fontFamily: 'var(--font-family-pretendard)',
-            fontSize: 'var(--font-size-body-sm)',
+            fontSize: 'var(--font-size-body-lg)',
             fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-primary)',
             lineHeight: 'var(--font-line-height-base)',

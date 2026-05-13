@@ -14,11 +14,10 @@ function formatDate(date: string | Date | number, format: DateFormat): string {
   if (isNaN(d.getTime())) return ''
 
   if (format === 'absolute') {
-    return d.toLocaleDateString('ko-KR', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    })
+    const yy = String(d.getFullYear()).slice(2)
+    const mm = String(d.getMonth() + 1).padStart(2, '0')
+    const dd = String(d.getDate()).padStart(2, '0')
+    return `${yy}.${mm}.${dd}`
   }
 
   if (format === 'datetime') {
@@ -61,7 +60,7 @@ export function DateLabel({
       className={className}
       style={{
         fontFamily: 'var(--font-family-pretendard)',
-        fontSize: 'var(--font-size-caption-sm)',
+        fontSize: 'var(--font-size-body-sm)',
         fontWeight: 'var(--font-weight-regular)',
         color: 'var(--color-text-tertiary)',
         lineHeight: 'var(--font-line-height-base)',

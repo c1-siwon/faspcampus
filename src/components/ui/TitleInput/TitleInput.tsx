@@ -44,40 +44,47 @@ export function TitleInput({
         ...style,
       }}
     >
-      <textarea
-        id={inputId}
-        value={value}
-        onChange={onChange}
-        disabled={disabled}
-        maxLength={maxLength}
-        placeholder={placeholder}
-        rows={1}
-        aria-label="제목 입력"
+      <div
         style={{
-          resize: 'none',
-          overflow: 'hidden',
-          border: 'none',
-          outline: 'none',
-          backgroundColor: 'transparent',
-          fontFamily: 'var(--font-family-pretendard)',
-          fontSize: 'var(--font-size-title-lg)',
-          fontWeight: 'var(--font-weight-bold)',
-          color: disabled
-            ? 'var(--color-text-disabled)'
-            : 'var(--color-text-primary)',
-          lineHeight: 'var(--font-line-height-base)',
-          width: '100%',
-          padding: 0,
-          cursor: disabled ? 'not-allowed' : 'text',
+          display: 'flex',
+          alignItems: 'center',
+          height: 64,
+          paddingLeft: 'var(--spacing-24)',
+          paddingRight: 'var(--spacing-24)',
+          border: '1px solid var(--color-border-default)',
+          borderRadius: 'var(--radius-8)',
+          boxSizing: 'border-box',
         }}
-        onInput={(e) => {
-          /* 내용에 따라 높이를 자동 조정 */
-          const el = e.currentTarget
-          el.style.height = 'auto'
-          el.style.height = `${el.scrollHeight}px`
-        }}
-        {...textareaProps}
-      />
+      >
+        <textarea
+          id={inputId}
+          value={value}
+          onChange={onChange}
+          disabled={disabled}
+          maxLength={maxLength}
+          placeholder={placeholder}
+          rows={1}
+          aria-label="제목 입력"
+          style={{
+            resize: 'none',
+            overflow: 'hidden',
+            border: 'none',
+            outline: 'none',
+            backgroundColor: 'transparent',
+            fontFamily: 'var(--font-family-pretendard)',
+            fontSize: 'var(--font-size-title-lg)',
+            fontWeight: 'var(--font-weight-regular)',
+            color: disabled
+              ? 'var(--color-text-disabled)'
+              : 'var(--color-text-primary)',
+            lineHeight: 'var(--font-line-height-base)',
+            width: '100%',
+            padding: 0,
+            cursor: disabled ? 'not-allowed' : 'text',
+          }}
+          {...textareaProps}
+        />
+      </div>
 
       {/* 글자 수 카운터 */}
       {maxLength !== undefined && (

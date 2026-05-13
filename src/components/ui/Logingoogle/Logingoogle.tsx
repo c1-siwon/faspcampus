@@ -29,15 +29,17 @@ export function Logingoogle({
         gap: 'var(--spacing-8)',
         width: '100%',
         padding: 'var(--spacing-12) var(--spacing-16)',
-        background: 'var(--color-bg-default)',
-        border: '1px solid var(--color-border-default)',
+        background: 'var(--color-bg-muted)',
+        border: 'none',
+        WebkitAppearance: 'none',
+        appearance: 'none',
         borderRadius: 'var(--radius-8)',
         cursor: disabled || loading ? 'not-allowed' : 'pointer',
         opacity: disabled ? 0.5 : 1,
         fontFamily: 'var(--font-family-pretendard)',
         fontSize: 'var(--font-size-body-sm)',
-        fontWeight: 'var(--font-weight-medium)',
-        color: 'var(--color-text-primary)',
+        fontWeight: 'var(--font-weight-bold)',
+        color: 'var(--color-content-strong)',
         lineHeight: 'var(--font-line-height-base)',
         transition: 'background 0.15s, border-color 0.15s',
         ...style,
@@ -56,9 +58,9 @@ export function Logingoogle({
           }}
         />
       ) : (
-        <Icon name="google" size={20} />
+        <Icon name="google" size={16} />
       )}
-      <span>구글로 계속하기</span>
+      <span>구글로 로그인 하기</span>
     </button>
   )
 }
