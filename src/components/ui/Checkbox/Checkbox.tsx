@@ -77,7 +77,7 @@ export function Checkbox({
         type="checkbox"
         checked={checked}
         disabled={disabled}
-        onChange={onChange}
+        onChange={disabled ? undefined : onChange}
         aria-checked={indeterminate ? 'mixed' : checked}
         style={{
           position: 'absolute',
@@ -100,8 +100,9 @@ export function Checkbox({
           display: 'inline-flex',
           alignItems: 'center',
           justifyContent: 'center',
-          width: 18,
-          height: 18,
+          /* ⚠️ 18px — --spacing-18 토큰 없음, 체크박스 표준 크기 유지 */
+          width: '18px',
+          height: '18px',
           flexShrink: 0,
           borderRadius: 'var(--radius-4)',
           border: `1.5px solid ${boxBorder}`,

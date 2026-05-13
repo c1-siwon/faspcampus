@@ -5,9 +5,9 @@ export interface ImagesmallProps {
   src?: string
   /** 대체 텍스트 */
   alt?: string
-  /** 고정 너비 (px). 기본 80 */
+  /** 고정 너비 (px). Figma 기준 160px */
   width?: number
-  /** 고정 높이 (px). 기본 80 */
+  /** 고정 높이 (px). Figma 기준 102px */
   height?: number
   /** 클릭 핸들러 */
   onClick?: () => void
@@ -20,8 +20,8 @@ export interface ImagesmallProps {
 export function Imagesmall({
   src,
   alt = '',
-  width = 80,
-  height = 80,
+  width = 160,
+  height = 102,
   onClick,
   className = '',
   style,
@@ -33,8 +33,9 @@ export function Imagesmall({
       style={{
         width,
         height,
-        borderRadius: 'var(--radius-8)',
+        borderRadius: 'var(--radius-4)',
         overflow: 'hidden',
+        border: '1px solid var(--color-border-default)',
         backgroundColor: 'var(--color-bg-muted)',
         flexShrink: 0,
         cursor: onClick ? 'pointer' : 'default',

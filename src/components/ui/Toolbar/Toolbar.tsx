@@ -31,7 +31,8 @@ export function Toolbar({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        height: 56,
+        /* ⚠️ 높이 56px — --spacing-56 토큰 없음, 디자인 고정값 유지 */
+        height: '56px',
         paddingLeft: 'var(--spacing-16)',
         paddingRight: 'var(--spacing-16)',
         backgroundColor: 'var(--color-bg-default)',

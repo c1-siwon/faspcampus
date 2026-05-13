@@ -1,5 +1,3 @@
-import React from 'react'
-
 export interface SortTabItemProps {
   /** 탭 레이블 */
   label: string

@@ -50,7 +50,7 @@ export const Default: Story = {
 
 export const WithTitle: Story = {
   args: {
-    leading: <Icon name="arrow-left" size={24} />,
+    leading: <Icon name="arrow_left" size={24} />,
     center: (
       <span
         style={{
@@ -88,7 +88,7 @@ export const WithActions: Story = {
     trailing: (
       <div style={{ display: 'flex', gap: 'var(--spacing-8)' }}>
         <Icon name="search" size={24} />
-        <Icon name="bell" size={24} />
+        <Icon name="notification" size={24} />
       </div>
     ),
   },

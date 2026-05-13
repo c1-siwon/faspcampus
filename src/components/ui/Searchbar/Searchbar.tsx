@@ -53,7 +53,8 @@ export function Searchbar({
         gap: 'var(--spacing-8)',
         paddingLeft: 'var(--spacing-12)',
         paddingRight: 'var(--spacing-12)',
-        height: 44,
+        /* ⚠️ 높이 44px — --spacing-44 토큰 없음, 검색바 고정값 유지 */
+        height: '44px',
         borderRadius: 'var(--radius-8)',
         border: '1px solid var(--color-border-default)',
         backgroundColor: 'var(--color-bg-default)',

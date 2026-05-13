@@ -100,7 +100,7 @@ export const WithTrailingIcon: Story = {
   args: {
     label: '캘린더',
     placeholder: '날짜를 선택하세요',
-    trailingIcon: <Icon name="calendar" size={20} />,
+    trailingIcon: <Icon name="search" size={20} />,
   },
 }
 

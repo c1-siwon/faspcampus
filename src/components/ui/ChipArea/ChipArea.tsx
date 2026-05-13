@@ -1,25 +1,17 @@
 import React from 'react'
-import { Chip } from '../Chip/Chip'
+import { Icon } from '../Icon/Icon'
 
 export interface ChipAreaOption {
-  /** 옵션 고유 값 */
   value: string
-  /** 옵션 레이블 */
   label: string
 }
 
 export interface ChipAreaProps {
-  /** 칩 옵션 목록 */
   options: ChipAreaOption[]
-  /** 선택된 값 목록 */
   selectedValues?: string[]
-  /** 선택 변경 핸들러 */
   onChange?: (values: string[]) => void
-  /** 단일 선택 모드 */
   singleSelect?: boolean
-  /** 추가 클래스 */
   className?: string
-  /** 인라인 스타일 */
   style?: React.CSSProperties
 }
 
@@ -59,14 +51,64 @@ export function ChipArea({
         ...style,
       }}
     >
-      {options.map((option) => (
-        <Chip
-          key={option.value}
-          label={option.label}
-          isSelected={selectedValues.includes(option.value)}
-          onClick={() => handleChipClick(option.value)}
-        />
-      ))}
+      {options.map((option) => {
+        const isSelected = selectedValues.includes(option.value)
+        return (
+          <div
+            key={option.value}
+            role="option"
+            aria-selected={isSelected}
+            tabIndex={0}
+            onClick={() => handleChipClick(option.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ')
+                handleChipClick(option.value)
+            }}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 'var(--spacing-4)',
+              paddingLeft: 'var(--spacing-8)',
+              paddingRight: 'var(--spacing-8)',
+              paddingTop: 'var(--spacing-4)',
+              paddingBottom: 'var(--spacing-4)',
+              borderRadius: 'var(--radius-8)',
+              backgroundColor: isSelected
+                ? 'var(--color-bg-brand-subtle)'
+                : 'var(--color-bg-muted)',
+              outline: isSelected
+                ? '2px solid var(--color-interactive-primary)'
+                : 'none',
+              cursor: 'pointer',
+              userSelect: 'none',
+            }}
+          >
+            <Icon
+              name="design"
+              size={16}
+              color={
+                isSelected
+                  ? 'var(--color-interactive-primary)'
+                  : 'var(--color-content-strong)'
+              }
+            />
+            <span
+              style={{
+                fontFamily: 'var(--font-family-pretendard)',
+                fontSize: 'var(--font-size-body-sm)',
+                fontWeight: 'var(--font-weight-bold)',
+                color: isSelected
+                  ? 'var(--color-interactive-primary)'
+                  : 'var(--color-content-strong)',
+                lineHeight: 'var(--font-line-height-base)',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              {option.label}
+            </span>
+          </div>
+        )
+      })}
     </div>
   )
 }

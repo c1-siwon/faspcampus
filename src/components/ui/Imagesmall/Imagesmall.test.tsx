@@ -14,9 +14,9 @@ describe('Imagesmall', () => {
     expect(screen.queryByRole('img')).not.toBeInTheDocument()
   })
 
-  it('기본 크기 80x80 적용', () => {
+  it('기본 크기 160x102 적용', () => {
     const { container } = render(<Imagesmall />)
     const wrapper = container.firstChild as HTMLElement
-    expect(wrapper).toHaveStyle({ width: '80px', height: '80px' })
+    expect(wrapper).toHaveStyle({ width: '160px', height: '102px' })
   })
 })

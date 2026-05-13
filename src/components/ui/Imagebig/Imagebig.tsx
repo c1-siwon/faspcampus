@@ -30,6 +30,7 @@ export function Imagebig({
         aspectRatio: '16 / 9',
         borderRadius: 'var(--radius-8)',
         overflow: 'hidden',
+        border: '1px solid var(--color-border-default)',
         backgroundColor: 'var(--color-bg-muted)',
         cursor: onClick ? 'pointer' : 'default',
         flexShrink: 0,

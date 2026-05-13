@@ -10,7 +10,7 @@ describe('Icon', () => {
   })
 
   it('label prop이 있으면 img role과 aria-label 적용', () => {
-    render(<Icon name="bell" label="알림" />)
+    render(<Icon name="notification" label="알림" />)
     const icon = screen.getByRole('img', { name: '알림' })
     expect(icon).toBeInTheDocument()
   })

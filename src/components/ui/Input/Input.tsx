@@ -83,7 +83,8 @@ export function Input({
           paddingRight: trailingIcon
             ? 'var(--spacing-12)'
             : 'var(--spacing-16)',
-          height: 44,
+          /* ⚠️ 높이 44px — --spacing-44 토큰 없음, 입력 필드 고정값 유지 */
+          height: '44px',
           borderRadius: 'var(--radius-8)',
           border: `1px solid ${borderColor}`,
           backgroundColor: disabled

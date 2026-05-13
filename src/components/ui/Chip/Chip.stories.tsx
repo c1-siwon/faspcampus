@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { expect, userEvent, within } from '@storybook/test'
+import { expect, within } from '@storybook/test'
+import { CodePreview } from '../../../stories/utils/CodePreview'
 import { Chip } from './Chip'
 
 const meta = {
@@ -9,20 +10,16 @@ const meta = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/design/x26jxBAfU7wMXUPFVdM0il/-%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4--%EC%8B%A4%EC%8A1%B5-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C?node-id=2004-1134',
+      url: 'https://www.figma.com/design/x26jxBAfU7wMXUPFVdM0il/-%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4--%EC%8B%A4%EC%8A%B5-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C?node-id=137-1763',
     },
   },
   argTypes: {
-    variant: { control: 'radio', options: ['default', 'selected', 'outlined'] },
-    isSelected: { control: 'boolean' },
-    removable: { control: 'boolean' },
+    type: { control: 'radio', options: ['category', 'notice'] },
     label: { control: 'text' },
   },
   args: {
-    label: '프론트엔드',
-    variant: 'default',
-    isSelected: false,
-    removable: false,
+    label: '디자인',
+    type: 'category',
   },
 } satisfies Meta<typeof Chip>
 
@@ -32,44 +29,53 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    const chip = canvas.getByRole('option')
-    await expect(chip).toBeInTheDocument()
-    await expect(chip).toHaveAttribute('aria-selected', 'false')
+    await expect(canvas.getByText('디자인')).toBeInTheDocument()
   },
 }
 
-export const Selected: Story = {
-  args: { variant: 'selected', label: '선택됨' },
+export const Category: Story = {
+  args: { type: 'category', label: '디자인' },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    await expect(canvas.getByRole('option')).toHaveAttribute(
-      'aria-selected',
-      'true'
-    )
+    await expect(canvas.getByText('디자인')).toBeInTheDocument()
   },
 }
 
-export const Outlined: Story = {
-  args: { variant: 'outlined', label: '아웃라인' },
-}
-
-export const Removable: Story = {
-  args: { label: '제거 가능', removable: true },
+export const Notice: Story = {
+  args: { type: 'notice', label: '공지' },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    const removeBtn = canvas.getByLabelText('제거 가능 제거')
-    await expect(removeBtn).toBeInTheDocument()
-    await userEvent.click(removeBtn)
+    await expect(canvas.getByText('공지')).toBeInTheDocument()
   },
 }
 
-export const AllVariants: Story = {
+export const AllTypes: Story = {
   render: () => (
     <div style={{ display: 'flex', gap: 'var(--spacing-8)', flexWrap: 'wrap' }}>
-      <Chip label="기본" variant="default" />
-      <Chip label="선택됨" variant="selected" />
-      <Chip label="아웃라인" variant="outlined" />
-      <Chip label="제거 가능" removable />
+      <Chip type="category" label="디자인" />
+      <Chip type="category" label="프론트엔드" />
+      <Chip type="notice" label="공지" />
+      <Chip type="notice" label="이벤트" />
+    </div>
+  ),
+}
+
+export const WithCodeExample: Story = {
+  render: (args) => (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 'var(--spacing-16)',
+      }}
+    >
+      <div style={{ display: 'flex', gap: 'var(--spacing-8)' }}>
+        <Chip {...args} />
+        <Chip type="notice" label="공지" />
+      </div>
+      <CodePreview
+        code={`<Chip type="category" label="디자인" />\n<Chip type="notice" label="공지" />`}
+      />
     </div>
   ),
 }
