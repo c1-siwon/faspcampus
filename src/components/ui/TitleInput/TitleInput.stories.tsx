@@ -38,6 +38,16 @@ type Story = StoryObj<typeof meta>
 
 /** 기본 상태 */
 export const Default: Story = {
+  render: (args) => {
+    const [value, setValue] = useState('')
+    return (
+      <TitleInput
+        {...args}
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+      />
+    )
+  },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     const textarea = canvas.getByRole('textbox', { name: '제목 입력' })

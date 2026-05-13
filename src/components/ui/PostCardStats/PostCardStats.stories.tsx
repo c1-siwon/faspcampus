@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { expect, userEvent, within } from '@storybook/test'
+import { expect, within } from '@storybook/test'
 import { PostCardStats } from './PostCardStats'
 
 const meta = {
@@ -15,14 +15,10 @@ const meta = {
   argTypes: {
     likes: { control: 'number' },
     views: { control: 'number' },
-    comments: { control: 'number' },
-    isLiked: { control: 'boolean' },
   },
   args: {
     likes: 24,
     views: 312,
-    comments: 8,
-    isLiked: false,
   },
 } satisfies Meta<typeof PostCardStats>
 
@@ -32,21 +28,15 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    const likeBtn = canvas.getByLabelText('좋아요 24개')
-    await expect(likeBtn).toBeInTheDocument()
-    await expect(likeBtn).toHaveAttribute('aria-pressed', 'false')
-    await userEvent.click(likeBtn)
+    await expect(canvas.getByText('312')).toBeInTheDocument()
+    await expect(canvas.getByText('24')).toBeInTheDocument()
   },
 }
 
-export const Liked: Story = {
-  args: { isLiked: true, likes: 25 },
-}
-
 export const LargeNumbers: Story = {
-  args: { likes: 1200, views: 45000, comments: 340 },
+  args: { likes: 1200, views: 45000 },
 }
 
 export const ZeroStats: Story = {
-  args: { likes: 0, views: 0, comments: 0 },
+  args: { likes: 0, views: 0 },
 }

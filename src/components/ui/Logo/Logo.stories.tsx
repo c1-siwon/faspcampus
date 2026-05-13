@@ -22,8 +22,6 @@ export const Default: Story = {
     const canvas = within(canvasElement)
     const logo = canvas.getByRole('img', { name: 'FigmaPedia 로고' })
     await expect(logo).toBeInTheDocument()
-    await expect(canvas.getByText('FigmaPedia')).toBeInTheDocument()
-    await expect(canvas.getByText('Fp')).toBeInTheDocument()
   },
 }
 

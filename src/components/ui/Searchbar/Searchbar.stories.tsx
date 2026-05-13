@@ -29,13 +29,14 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  decorators: [
-    (Story) => (
+  render: (args) => {
+    const [value, setValue] = useState('')
+    return (
       <div style={{ width: 320 }}>
-        <Story />
+        <Searchbar {...args} value={value} onChange={setValue} />
       </div>
-    ),
-  ],
+    )
+  },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     const input = canvas.getByRole('searchbox')

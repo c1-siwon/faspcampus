@@ -26,10 +26,11 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    const btn = canvas.getByRole('button', { name: /구글로 계속하기/ })
+    const btn = canvas.getByRole('button', { name: /구글로 로그인 하기/ })
     await expect(btn).toBeInTheDocument()
     await expect(btn).not.toBeDisabled()
     await userEvent.click(btn)
+    btn.blur()
   },
 }
 

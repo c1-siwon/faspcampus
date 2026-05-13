@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Chromatic build 4" time="60" timestamp="2026-05-13T15:16:56.847Z" tests="177" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="buildNumber" value="4"/>
+      <property name="buildStatus" value="ACCEPTED"/>
+      <property name="buildUrl" value="https://www.chromatic.com/build?appId=69fdd4016ca48c3c348ae9cf&amp;number=4"/>
+      <property name="storybookUrl" value="https://69fdd4016ca48c3c348ae9cf-oqqgnxxijk.chromatic.com/"/>
+    </properties>
+    <testcase classname="UI.Button" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Core ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Core Light ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Mono ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Mono Light ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Warning ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Warning Light ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Outline ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Small ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Medium ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Large ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Disabled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="With Leading Icon ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="Icon Only ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="All Variants ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Button" name="All Sizes ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonLarge" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonLarge" name="Core ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonLarge" name="Core Light ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonLarge" name="Mono ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonLarge" name="Mono Light ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonLarge" name="Warning ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonLarge" name="Outline ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonLarge" name="Disabled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonLarge" name="All Variants ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonMedium" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonMedium" name="Core ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonMedium" name="Core Light ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonMedium" name="Mono ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonMedium" name="Mono Light ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonMedium" name="Warning ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonMedium" name="Outline ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonMedium" name="Disabled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonMedium" name="All Variants ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonSmall" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonSmall" name="Core ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonSmall" name="Core Light ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonSmall" name="Mono ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonSmall" name="Mono Light ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonSmall" name="Warning ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonSmall" name="Outline ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonSmall" name="Disabled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ButtonSmall" name="All Variants ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Category" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Category" name="Selected ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Category" name="All States ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Category" name="With Code Example ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Checkbox" name="Unchecked ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Checkbox" name="Checked ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Checkbox" name="Indeterminate ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Checkbox" name="Disabled Unchecked ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Checkbox" name="Disabled Checked ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Checkbox" name="No Label ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Checkbox" name="Interactive ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Checkbox" name="All States ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Chip" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Chip" name="Category ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Chip" name="Notice ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Chip" name="All Types ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Chip" name="With Code Example ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ChipArea" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ChipArea" name="Single Select ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ChipArea" name="Multiple Selected ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ChipArea" name="Interactive ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ChipArea" name="Interactive Single Select ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ContentInputContainer" name="Default ">
+      <properties>
+        <property name="result" value="ACCEPTED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ContentInputContainer" name="With Label ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ContentInputContainer" name="With Max Length ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ContentInputContainer" name="With Error ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ContentInputContainer" name="Disabled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ContentInputContainer" name="With Image ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.ContentInputContainer" name="With Code Example ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.DateLabel" name="Relative ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.DateLabel" name="Just Now ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.DateLabel" name="Day Ago ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.DateLabel" name="Week Ago ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.DateLabel" name="Absolute ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.DateLabel" name="Datetime ">
+      <properties>
+        <property name="result" value="ACCEPTED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.DateLabel" name="All Formats ">
+      <properties>
+        <property name="result" value="ACCEPTED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Divider" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Divider" name="Horizontal ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Divider" name="Horizontal Thick ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Divider" name="Vertical ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Icon" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Icon" name="Search ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Icon" name="Close ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Icon" name="Heart Empty ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Icon" name="Heart Fill ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Icon" name="With Label ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Icon" name="All Sizes ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Icon" name="All Icons ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Icon" name="With Code Example ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Imagebig" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Imagebig" name="Placeholder ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Imagebig" name="All Samples ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Imagesmall" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Imagesmall" name="Placeholder ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Imagesmall" name="All Samples ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Input" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Input" name="No Label ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Input" name="Error State ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Input" name="Disabled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Input" name="With Leading Icon ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Input" name="With Trailing Icon ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Input" name="With Both Icons ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Input" name="Interactive ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Input" name="All States ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.LoginBottom" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.LoginBottom" name="Keep Logged In ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Logingoogle" name="Default ">
+      <properties>
+        <property name="result" value="ACCEPTED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Logingoogle" name="Disabled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Logingoogle" name="Loading ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Logingoogle" name="With Code Example ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Loginsetup" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Loginsetup" name="Checked ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Loginsetup" name="With Code Example ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Loginsign" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Loginsign" name="With Handler ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Logo" name="Default ">
+      <properties>
+        <property name="result" value="ACCEPTED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Logo" name="Clickable ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.NavigationBar" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.NavigationBar" name="State Login ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.NavigationBar" name="State Logout ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.NavigationBar" name="With Code Example ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostCard" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostCard" name="With Thumbnail ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostCard" name="Category Only ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostCard" name="Notice Only ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostCard" name="No Chips ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostCard" name="High Engagement ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostCard" name="With Code Example ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostCardStats" name="Default ">
+      <properties>
+        <property name="result" value="ACCEPTED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostCardStats" name="Large Numbers ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostCardStats" name="Zero Stats ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostFilterHeader" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostFilterHeader" name="Custom Title ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostFilterHeader" name="With Code Example ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostWriteHeader" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostWriteHeader" name="Title Only ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostWriteHeader" name="Custom Title ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.PostWriteHeader" name="With Code Example ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Searchbar" name="Default ">
+      <properties>
+        <property name="result" value="ACCEPTED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Searchbar" name="With Value ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Searchbar" name="Disabled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Searchbar" name="Controlled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.SortTab" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.SortTab" name="First Selected ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.SortTab" name="Second Selected ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.SortTab" name="Controlled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.SortTab" name="Two Options ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.SortTabItem" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.SortTabItem" name="Selected ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.SortTabItem" name="Unselected ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.TitleInput" name="Default ">
+      <properties>
+        <property name="result" value="ACCEPTED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.TitleInput" name="With Value ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.TitleInput" name="With Max Length ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.TitleInput" name="Disabled ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.TitleInput" name="Interactive ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Toolbar" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Toolbar" name="With Title ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Toolbar" name="With Actions ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="UI.Toolbar" name="No Border ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Pages.HomePage" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Pages.HomePage" name="Empty Posts ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Pages.LoginPage" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Pages.PostDetailPage" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Pages.PostWritePage" name="Default ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Tokens.Colors" name="Primitive Colors ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Tokens.Colors" name="Semantic Colors ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Tokens.Colors" name="All Colors ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Tokens.Spacing" name="Spacing Scale ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Tokens.Spacing" name="Border Radius Scale ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Tokens.Spacing" name="All Spacing &amp; Radius ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Tokens.Typography" name="Font Size Scale ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Tokens.Typography" name="Font Weights ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Tokens.Typography" name="Font Family ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+    <testcase classname="Tokens.Typography" name="All Typography ">
+      <properties>
+        <property name="result" value="PASSED"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

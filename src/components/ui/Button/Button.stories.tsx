@@ -51,6 +51,7 @@ export const Default: Story = {
     await expect(button).toBeInTheDocument()
     await expect(button).not.toBeDisabled()
     await userEvent.click(button)
+    button.blur()
   },
 }
 

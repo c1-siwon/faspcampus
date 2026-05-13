@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { expect, userEvent, within } from '@storybook/test'
 import { CodePreview } from '../../../stories/utils/CodePreview'
@@ -30,6 +31,10 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
+  render: (args) => {
+    const [value, setValue] = useState('')
+    return <ContentInputContainer {...args} value={value} onChange={setValue} />
+  },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     const textarea = canvas.getByRole('textbox')
