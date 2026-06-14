@@ -72,7 +72,7 @@
 | 3   | Tailwind 기본값 미사용    | ✅   | `bg-red-`, `text-gray-`, `text-sm` 등 기본 클래스 없는지 확인   |
 | 4   | 토큰 외 spacing 미사용    | ✅   | `8px`, `15px`, `24px` 등 토큰에 없는 값 없는지 확인             |
 | 5   | 기존 컴포넌트 재사용      | ✅   | Button/Tag/Card 등 기존 컴포넌트로 대체 가능한 부분 없는지 확인 |
-| 6   | 토큰 추가 시 3파일 동기화 | ✅   | theme.css, theme.js, tailwind.config.js 모두 수정했는지 확인    |
+| 6   | 토큰 추가 시 빌드 확인    | ✅   | `tokens/*.json` 수정 후 `npm run build:tokens` 실행했는지 확인  |
 | 7   | 기존 기능 정상 동작       | ✅   | 기존 컴포넌트/페이지 깨지지 않았는지 확인                       |
 
 #### 7단계: 작업 완료

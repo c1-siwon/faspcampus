@@ -15,14 +15,17 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash scripts/check-design-tokens.sh"
+            "command": "node .claude/hooks/check-design-tokens.mjs"
           }
         ]
       },
       {
         "matcher": "Write|Edit|MultiEdit",
         "hooks": [
-          { "type": "command", "command": "bash scripts/check-story-exists.sh" }
+          {
+            "type": "command",
+            "command": "node .claude/hooks/check-story-exists.mjs"
+          }
         ]
       }
     ],
@@ -32,7 +35,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 -c \"import json, sys; d=json.load(sys.stdin); p=d.get('tool_input',{}).get('file_path',''); sys.exit(2 if any(x in p for x in ['.env','.env.local','package-lock.json','.git/']) else 0)\""
+            "command": "node .claude/hooks/protect-files.mjs"
           }
         ]
       }
@@ -42,13 +45,13 @@
         "hooks": [
           {
             "type": "command",
-            "command": "osascript -e 'display notification \"Claude Code 입력 대기 중\" with title \"Claude Code\"' 2>/dev/null || true"
+            "command": "node .claude/hooks/notify.mjs"
           }
         ]
       }
     ]
   },
   "permissions": {
-    "deny": ["Read(./.env)", "Read(./.env.*)"]
+    "deny": ["Read(./.env)", "Read(./.env.*)", "write(./src/tokens/**)"]
   }
 }
