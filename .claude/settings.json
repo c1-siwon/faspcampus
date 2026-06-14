@@ -52,6 +52,6 @@
     ]
   },
   "permissions": {
-    "deny": ["Read(./.env)", "Read(./.env.*)", "write(./src/tokens/**)"]
+    "deny": ["Read(./.env)", "Read(./.env.*)"]
   }
 }

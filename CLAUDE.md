@@ -1,4 +1,4 @@
-# 프로젝트: [프로젝트명]
+# 프로젝트: [fastcampus]
 
 ## 기술 스택
 - 프론트엔드: React 19 + TypeScript 5.x
